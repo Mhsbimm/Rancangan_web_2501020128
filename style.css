@@ -1,0 +1,38 @@
+:root {
+  --primary-color: #5b21b6;
+  --primary-light: #ede9fe;
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  --bg-main: #f9fafb;
+  --bg-card: #ffffff;
+  --border-color: #e5e7eb;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background-color: var(--bg-main); color: var(--text-main); line-height: 1.5; }
+
+/* Header & Navigasi */
+header { background-color: var(--bg-card); border-bottom: 1px solid var(--border-color); padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; }
+.logo-section { display: flex; align-items: center; gap: 15px; }
+.logo-icon { background-color: var(--primary-color); color: white; width: 40px; height: 40px; border-radius: 8px; display: flex; justify-content: center; align-items: center; }
+.nav-links { display: flex; gap: 10px; }
+.nav-item { padding: 8px 16px; border-radius: 20px; text-decoration: none; color: var(--text-main); font-size: 14px; font-weight: 500; border: 1px solid var(--border-color); display: flex; align-items: center; gap: 8px; }
+.nav-item.active { background-color: var(--primary-color); color: white; border-color: var(--primary-color); }
+
+/* Layout Utama */
+main { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+.hero { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; gap: 40px; }
+.hero-text { flex: 1; max-width: 600px; }
+.badge { display: inline-flex; background-color: var(--primary-light); color: var(--primary-color); padding: 6px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 20px; }
+.hero-text h2 { font-size: 42px; font-weight: 800; margin-bottom: 10px; }
+.hero-text .nim { color: var(--text-muted); font-size: 18px; margin-bottom: 20px; }
+.hero-text p { color: var(--text-muted); margin-bottom: 30px; }
+.hero-image-container { flex: 1; display: flex; flex-direction: column; align-items: flex-end; }
+.hero-image { width: 320px; height: auto; border-radius: 10px; margin-bottom: 20px; }
+
+/* Grid & Cards */
+.content-grid { display: grid; grid-template-columns: 1fr; gap: 30px; margin-bottom: 30px; }
+.card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 30px; }
+.card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.card-icon { background-color: var(--primary-light); color: var(--primary-color); width: 40px; height: 40px; border-radius: 10px; display: flex; justify-content: center; align-items: center; }
+.edu-item { border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; margin-bottom: 15px; }
